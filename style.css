@@ -1,7 +1,10 @@
 .navbar {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
     width:100%;
+    justify-content: space-evenly;
 }
+a {
+    text-decoration: none;
+}
+
