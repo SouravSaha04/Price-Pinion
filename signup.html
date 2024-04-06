@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +11,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Great+Vibes&family=Pacifico&display=swap"
     rel="stylesheet">
 <style>
-    *{
+    * {
         margin: 0px;
-    }
-     body {
-        font-family: 'Balsamiq Sans', cursive;
-        margin: 0px;
-        padding: 0px;
-        background-color: rgb(204, 204, 229);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    .btn {
-        font-family: 'Balsamiq Sans', cursive;
-        margin: 0px 9px;
-        background-color: antiquewhite;
-        /* color: brown; */
-        color: white;
-        padding: 6px 14px;
-        border: 2px solid rgb(74, 96, 240);
-        border-radius: 10px;
-        font-size: 14px;
-        cursor: pointer;
     }
 
-    .btn:hover {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background: #f3f3f3;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    button {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: rgb(74, 96, 240);
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .wrap button:hover {
         background-color: white;
         color: rgb(56, 11, 146);
-        border:  white;
     }
 
     .container {
         /* border: 2px solid goldenrod; */
-        margin: 80px 200px;
-        padding: 24px;
-        width: 24%;
-        height: 0%;
-        border-radius: 28px;
-        font-size: 20px;
-        cursor: pointer;
+        background-color: rgb(204, 204, 229);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 30px 20px;
+        transition: transform 0.2s;
+        width: 550px;
+        height: 520px;
+        text-align: center;
     }
 
     .container h1 {
@@ -58,21 +63,18 @@
         padding-bottom: 14px;
     }
 
-    .container h4{
+    .container h4 {
         margin-bottom: 2px;
     }
 
     .form-group input {
-        font-family: 'Balsamiq Sans', cursive;
-        text-align: center;
         display: block;
-        height: 24px;
-        width: 300px;
-        padding: 1px;
-        border: 1px solid black;
-        margin: 10px auto;
-        font-size: 15px;
-        border-radius: 4px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: rgb(56, 11, 146);
+        font-weight: bold;
     }
 
     .container button {
@@ -82,38 +84,69 @@
         margin: 20px auto;
         font-size: 24px;
     }
-    
 
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: rgb(56, 11, 146);
+        font-weight: bold;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
 </style>
+
 <body>
-    
+
     <div class="container">
         <h1>Create Account</h1>
         <form action="">
             <div class="form-group">
-                <h4>Your Name</h4>
+                <label>Your Name</label>
                 <input type="text" name="" placeholder="First and last name">
             </div>
             <div class="form-group">
-                <h4>Mobile number</h4>
-                <input type="number" name="" placeholder="Mobile number">
-            </div>
-            <div class="form-group">
-                <h4>Email</h4>
+                <label>Email</label>
                 <input type="text" name="" placeholder="Email">
             </div>
             <div class="form-group">
-                <h4>Password</h4>
+                <label>Password</label>
                 <input type="text" name="" placeholder="Password (atleast 6 characters)">
             </div>
             <div class="form-group">
-                <h4>Confirm password</h4>
+                <label>Confirm password</label>
                 <input type="text" name="" placeholder="Re-type password">
             </div>
-            <button class="btn">Sign up</button>
+            <div class="wrap">
+                <button type="submit" onclick="solve()">
+                    Sign Up
+                </button>
+            </div>
 
         </form>
+        <p>Already have an account?
+            <a href="login.html" style="text-decoration: none;">
+                Login
+            </a>
+        </p>
     </div>
-    
+
 </body>
+
 </html>
