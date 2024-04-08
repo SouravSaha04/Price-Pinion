@@ -21,7 +21,7 @@ a {
     vertical-align: middle;
     color:rgb(74, 96, 240);
 }
-h1 {
+.navbar h1 {
     color:rgb(56, 11, 146);
     font-family: 'Pacifico', cursive;
 }

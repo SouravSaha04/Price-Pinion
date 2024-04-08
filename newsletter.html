@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
+    <div id="menu-content"></div>
     <div class="container">
         <div class="sub-container-one">
             <h1>Tech News</h1>
@@ -46,7 +49,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 30px;
+            padding-top: 30px; 
         }
 
         .container {
@@ -110,5 +113,8 @@
         }
     </style>
 </body>
+<script type="text/javascript">
+    $('#menu-content').load('menu.html');
+</script>
 
 </html>
