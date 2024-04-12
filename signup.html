@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Great+Vibes&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Great+Vibes&family=Pacifico&display=swap"
     rel="stylesheet">
-
 <style>
     * {
         margin: 0px;
@@ -47,7 +46,6 @@
     }
 
     .container {
-        /* border: 2px solid goldenrod; */
         background-color: rgb(204, 204, 229);
         border-radius: 15px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -62,10 +60,6 @@
         text-align: center;
         color: rgb(64, 25, 141);
         padding-bottom: 14px;
-    }
-
-    .container h4 {
-        margin-bottom: 2px;
     }
 
     .form-group input {
@@ -114,31 +108,31 @@
 </style>
 
 <body>
+
     <div class="container">
         <h1>Create Account</h1>
-        <form action="">
+        <form action="/signup" method="POST">
             <div class="form-group">
                 <label>Your Name</label>
-                <input type="text" name="" placeholder="Full name">
+                <input type="text" name="" placeholder="First and last name">
             </div>
             <div class="form-group">
                 <label>Email</label>
-                <input type="text" name="" placeholder="Email">
+                <input type="email" name="email" placeholder="Email">
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="text" name="" placeholder="Password (atleast 6 characters)">
+                <input type="password" name="password" placeholder="Password (at least 6 characters)">
             </div>
             <div class="form-group">
                 <label>Confirm password</label>
-                <input type="text" name="" placeholder="Re-type password">
+                <input type="password" name="confirm_password" placeholder="Re-type password">
             </div>
             <div class="wrap">
-                <button type="submit" onclick="solve()">
+                <button type="submit">
                     Sign Up
                 </button>
             </div>
-
         </form>
         <p>Already have an account?
             <a href="login.html" style="text-decoration: none;">
