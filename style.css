@@ -8,7 +8,8 @@ body {
     height:80px;
     justify-content:space-around;
     background-color:rgb(204, 204, 229);
-    border:2px solid  rgb(74, 96, 240);
+    /* border:2px solid  rgb(74, 96, 240); */
+    border:2px solid  white;
     border-radius: 5px;
 }
 a {
