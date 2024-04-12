@@ -17,6 +17,35 @@
 
 <body>
     <div id="menu-content"></div>
+    <div class="search-wrapper">
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" id="search" name="search" placeholder="Enter product name">
+                <label for="price">Price Range:</label>
+                <select name="price" id="price">
+                    <option value="">Select Price Range</option>
+                    <option value="5000-6000">5000 - 6000</option>
+                    <option value="6001-7000">6001 - 7000</option>
+                    <option value="7001-8000">7001 - 8000</option>
+                    <option value="8001-10000">8001 - 10000</option>
+                    <option value="10001-100000">Above 10000</option>
+                </select>
+                
+                <label for="brand">Brand:</label>
+                <select name="brand" id="brand">
+                    <option value="">Select Brand</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="HP">HP</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Asus">Asus</option>
+                </select>
+                
+                <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+            </form>
+        </div>
+    </div>
+    
 </body>
 <script type="text/javascript">
     $('#menu-content').load('menu.html');
