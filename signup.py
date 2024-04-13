@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Connect to MongoDB Atlas
 client = MongoClient('mongodb+srv://shaswata:707@pricepinion.vwosknx.mongodb.net/')
-db = client['<dbname>']  # Replace '<dbname>' with your database name
+db = client['Users']  # Replace '<dbname>' with your database name
 users_collection = db['users_info']  # Collection to store user data
 
 @app.route('/')
